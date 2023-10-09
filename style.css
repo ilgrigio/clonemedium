@@ -1,33 +1,47 @@
 * {
   box-sizing: border-box;
 }
+
 body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 ion-icon {
   color: gray;
 }
+
 h2,
 h4,
 h5,
 p {
   margin: 0;
 }
+
 img {
   object-fit: cover;
 }
+
 #nav {
+  position: fixed;
+  background-color: #fff;
+  z-index: 9999;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 75px;
-  padding-inline: 7%;
+  width: 100%;
+  height: 80px;
+  padding-inline: 5%;
   box-shadow: 0px 1px 1px #aaaaaa;
 }
+
 #nav img {
   width: 13%;
   object-fit: cover;
 }
+
 #nav2 {
   display: flex;
   align-items: center;
@@ -35,6 +49,7 @@ img {
   font-size: 20px;
   gap: 15px;
 }
+
 .button {
   width: 70%;
   background-color: #fff;
@@ -42,24 +57,28 @@ img {
   border-radius: 20px;
   padding: 8px;
 }
+
 #s-container {
   display: flex;
 }
+
 #container {
   width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
+
 .top {
   display: flex;
   align-items: center;
   align-content: flex-start;
   width: 100%;
   margin-top: 50px;
-  margin-left: 50px;
+  margin-left: 60px;
   flex-wrap: wrap;
 }
+
 .follow {
   display: flex;
   gap: 30px;
@@ -70,9 +89,11 @@ img {
   font-size: small;
   width: 40%;
 }
+
 .follow h4 {
   padding-bottom: 10px;
 }
+
 .follow h4:hover {
   color: black;
   border-bottom: 2px solid #000;
@@ -90,12 +111,16 @@ div.user {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-top: 10px;
+  padding-top: 10px;
 }
+
 .user img {
   width: 20px;
   height: 20px;
   border-radius: 50%;
 }
+
 div.post {
   display: flex;
   flex-direction: column;
@@ -103,28 +128,34 @@ div.post {
   gap: 8px;
   width: 100%;
 }
+
 .post h2 {
   font-weight: 900;
   font-stretch: condensed;
 }
+
 .post h4 {
   color: gray;
   font-weight: 400;
 }
+
 .cover {
   width: 220px;
   height: 140px;
 }
+
 .date-time {
   display: flex;
   justify-content: space-between;
   width: 95%;
 }
+
 .radius {
   background-color: rgb(240, 240, 240);
   border-radius: 30px;
   padding: 3px;
 }
+
 .span {
   display: flex;
   align-items: center;
@@ -133,21 +164,38 @@ div.post {
   font-size: 13px;
   color: gray;
 }
- .span3 {
+
+.span2 {
+  background-color: #fff;
+  font-size: 13px;
+  border: 2px solid rgb(240, 240, 240);
+  border-radius: 30px;
+  width: 60px;
+  height: 30px;
+  padding: 6px;
+  text-align: center;
+}
+
+.span3 {
   color: gray;
-} 
+}
+
 .add-dots {
   font-size: 20px;
 }
+
 .dot {
   padding-bottom: 5px;
 }
+
 .picture {
   width: 80%;
 }
+
 .picture img {
   width: 50%;
 }
+
 #container-d {
   width: 30%;
   border-left: 2px solid rgb(240, 240, 240);
@@ -158,53 +206,69 @@ div.post {
   padding-left: 30px;
   margin-top: 20px;
 }
+
 .logo {
   width: 30%;
   display: flex;
   align-items: center;
 }
+
 .logo img {
   width: 30%;
 }
+
 .button img {
   width: 10%;
 }
+
 .discover {
   width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  margin-top: 20px;
+  margin-top: 50px;
   padding: 20px;
   text-align: center;
   border-bottom: 2px solid rgb(240, 240, 240);
 }
+
 .discover a {
   display: block;
   font-size: 13px;
   color: gray;
 }
+
 .align {
   display: flex;
+  gap: 5px;
   align-items: center;
+  justify-content: center;
 }
+
 .align button {
   width: 100%;
 }
+
 .topics {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   gap: 10px;
 }
+
+.topics h4 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 .fstart {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 12px;
 }
+
 .fstart span {
   background-color: rgb(240, 240, 240);
   border: none;
@@ -212,50 +276,48 @@ div.post {
   padding: 10px;
   font-size: 13px;
 }
-.topics h4 {
-  margin-top: 20px;
-  margin-bottom: 15px;
-}
 
 .circle {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   width: 100%;
   gap: 15px;
 }
+
 .circle img {
   width: 10%;
   border-radius: 50%;
   object-fit: cover;
   aspect-ratio: 1/1;
 }
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
 .author {
   display: flex;
 }
-.span2 {
-  background-color: #fff;
-  font-size: 13px;
-  border: 2px solid rgb(240, 240, 240);
-  border-radius: 30px;
-  display: block;
-  width: 65px;
-  height: 30px;
-  padding: 6px;
-  text-align: center;
-}
+
 .recently img {
   width: 5%;
 }
+
 .recently a {
-  display: block;
   font-size: 14px;
   color: green;
   text-decoration: none;
+  margin-top: 20px;
 }
+
 .recently {
   display: flex;
   flex-direction: column;
 }
+
 .other {
   font-size: 14px;
   display: flex;
