@@ -212,6 +212,7 @@ div.post {
   width: 30%;
   display: flex;
   align-items: center;
+  margin-top: 100px;
 }
 
 .logo img {
@@ -228,7 +229,6 @@ div.post {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  margin-top: 50px;
   padding: 20px;
   text-align: center;
   border-bottom: 2px solid rgb(240, 240, 240);
